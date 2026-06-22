@@ -63,20 +63,18 @@
     }
   },
   {
-    "id": "BOO0001",
-    "name": "Kinetic Terra",
-    "category": "Boots",
-    "price": "295.00",
-    "description": "Conquer all terrains with Kinetic Terra. This heavy-duty tactical boot is constructed from abrasion-resistant cordura and leather. The high-traction lugged outsole provides unmatched grip in extreme environments.",
+    "id": "TSR0001",
+    "name": "Kinetic T-Shirts",
+    "category": "T-Shirts",
+    "price": "15.99",
+    "description": "Conquer all terrains with Kinetic Terra.",
     "features": [
       "High-traction tactical lugged outsole",
-      "Dual ankle support straps with quick-release buckles",
-      "Abrasion-resistant cordura panels",
       "Waterproof gusseted tongue"
     ],
     "images": [
-      "assets/BOO/BOO0001/photo1.svg",
-      "assets/BOO/BOO0001/photo2.svg"
+      "assets/TSR/TSR0001/basics.png",
+      "assets/TSR/TSR0001/graphic_tee.png"
     ],
     "links": {
       "amazon": null,
