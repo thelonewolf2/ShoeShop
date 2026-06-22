@@ -545,7 +545,7 @@
               <div>
                 <span class="text-[10px] font-mono tracking-widest text-neutral-500 uppercase">${product.category} / ${product.id}</span>
                 <h3 class="text-white text-lg font-bold font-heading tracking-tight mt-0.5 group-hover:text-cyan-400 transition-colors duration-300 uppercase">${product.name}</h3>
-                <div class="text-cyan-400 text-sm font-mono font-semibold mt-1">$${parseFloat(product.price).toFixed(2)}</div>
+                <div class="text-cyan-400 text-sm font-mono font-semibold mt-1">£${parseFloat(product.price).toFixed(2)}</div>
               </div>
 
               <!-- Purchase Buttons -->
@@ -734,7 +734,7 @@
       // Populate elements
       modalCategoryLabel.textContent = `${product.category} // ${product.id}`;
       modalName.textContent = product.name;
-      modalPrice.textContent = `$${parseFloat(product.price).toFixed(2)}`;
+      modalPrice.textContent = `£${parseFloat(product.price).toFixed(2)}`;
       modalDesc.textContent = product.description;
 
       // Populate features checklist
