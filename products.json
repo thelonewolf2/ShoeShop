@@ -1,0 +1,86 @@
+[
+  {
+    "id": "SNE0001",
+    "name": "Kinetic Phantom",
+    "category": "Sneakers",
+    "price": "189.00",
+    "description": "Engineered for urban exploration, the Kinetic Phantom features a modular structural cage, adaptive cushioning, and dynamic glow elements. Combining high-end aesthetics with premium materials for maximum futuristic comfort.",
+    "features": [
+      "Cyberpunk structural cage styling",
+      "Adaptive carbon fiber cushioning plate",
+      "Liquid-repellent outer coating",
+      "High-vis luminescent side swoosh"
+    ],
+    "images": [
+      "assets/SNE/SNE0001/photo1.svg",
+      "assets/SNE/SNE0001/photo2.svg"
+    ],
+    "links": {
+      "amazon": "https://www.amazon.com/s?k=futuristic+sneakers",
+      "ebay": "https://www.ebay.com/sch/i.html?_nkw=cyberpunk+shoes"
+    }
+  },
+  {
+    "id": "SNE0002",
+    "name": "Kinetic Nebula",
+    "category": "Sneakers",
+    "price": "245.00",
+    "description": "Stand out in any dimension with the Kinetic Nebula. This high-top design integrates iridescent purple-pink panels that shift color with movement. Equipped with a chunky platform sole and ankle lock technology.",
+    "features": [
+      "Iridescent color-shifting materials",
+      "Chunky platform midsole with premium grip",
+      "Ankle lock stabilizer technology",
+      "Neon accent pull-loops"
+    ],
+    "images": [
+      "assets/SNE/SNE0002/photo1.svg",
+      "assets/SNE/SNE0002/photo2.svg"
+    ],
+    "links": {
+      "amazon": "https://www.amazon.com/s?k=high+top+sneakers",
+      "ebay": null
+    }
+  },
+  {
+    "id": "RUN0001",
+    "name": "Kinetic Velocity",
+    "category": "Running Shoes",
+    "price": "210.00",
+    "description": "Built for velocity. The Kinetic Velocity uses a curved aerodynamic sole to propel runners forward. Lightweight monofilament mesh ensures breathability, while the lime green speed accents reflect modern racing standards.",
+    "features": [
+      "Aerodynamic propulsive curved design",
+      "Ultra-lightweight mesh upper",
+      "Energy return foam midsole layer",
+      "Speed-lacing quick-tension system"
+    ],
+    "images": [
+      "assets/RUN/RUN0001/photo1.svg",
+      "assets/RUN/RUN0001/photo2.svg"
+    ],
+    "links": {
+      "amazon": null,
+      "ebay": "https://www.ebay.com/sch/i.html?_nkw=running+shoes+lime+green"
+    }
+  },
+  {
+    "id": "BOO0001",
+    "name": "Kinetic Terra",
+    "category": "Boots",
+    "price": "295.00",
+    "description": "Conquer all terrains with Kinetic Terra. This heavy-duty tactical boot is constructed from abrasion-resistant cordura and leather. The high-traction lugged outsole provides unmatched grip in extreme environments.",
+    "features": [
+      "High-traction tactical lugged outsole",
+      "Dual ankle support straps with quick-release buckles",
+      "Abrasion-resistant cordura panels",
+      "Waterproof gusseted tongue"
+    ],
+    "images": [
+      "assets/BOO/BOO0001/photo1.svg",
+      "assets/BOO/BOO0001/photo2.svg"
+    ],
+    "links": {
+      "amazon": null,
+      "ebay": null
+    }
+  }
+]
