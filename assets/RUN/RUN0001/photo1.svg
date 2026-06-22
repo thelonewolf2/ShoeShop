@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Glow -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#76ff03" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0" />
+    </radialGradient>
+    <!-- Lime neon gradient -->
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#76ff03" />
+      <stop offset="100%" stop-color="#00e676" />
+    </linearGradient>
+    <!-- Body (Sleek light/dark hybrid) -->
+    <linearGradient id="bodyDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#333" />
+      <stop offset="50%" stop-color="#222" />
+      <stop offset="100%" stop-color="#111" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <rect width="400" height="300" fill="#0d0d0d" rx="16" />
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" />
+    <line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" />
+    <line x1="0" y1="250" x2="400" y2="250" />
+    <line x1="50" y1="0" x2="50" y2="300" /><line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="300" /><line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="250" y1="0" x2="250" y2="300" /><line x1="300" y1="0" x2="300" y2="300" />
+    <line x1="350" y1="0" x2="350" y2="300" />
+  </g>
+  
+  <rect width="400" height="300" fill="url(#bgGlow)" rx="16" />
+  
+  <!-- Shadows -->
+  <ellipse cx="200" cy="245" rx="110" ry="12" fill="#000" opacity="0.6" filter="blur(5px)" />
+  <ellipse cx="200" cy="245" rx="70" ry="6" fill="#76ff03" opacity="0.15" filter="blur(8px)" />
+
+  <g transform="translate(45, 45)">
+    <!-- Aerodynamic Sole (curved for speed runner) -->
+    <path d="M 40,165 Q 90,185 150,175 T 265,145 L 270,135 Q 260,150 150,165 T 40,155 Z" fill="#1e1e1e" stroke="#333" stroke-width="1" />
+    <!-- Dynamic green light outline under sole -->
+    <path d="M 35,160 Q 90,182 150,172 T 268,140" fill="none" stroke="url(#neonGreen)" stroke-width="3" filter="url(#glow)" />
+    
+    <!-- Sole foam layer -->
+    <path d="M 40,155 Q 90,165 150,160 T 260,138 L 265,130 Q 250,145 150,150 T 40,145 Z" fill="#fff" opacity="0.9" />
+
+    <!-- Main Shoe Body (highly aerodynamic mesh pattern concept) -->
+    <path d="M 40,145 Q 32,100 65,85 T 160,80 Q 190,65 210,85 Q 235,100 260,130 L 255,138 Q 150,150 40,145 Z" fill="url(#bodyDark)" stroke="#333" stroke-width="1" />
+    
+    <!-- Neon green mesh texture lines / vents -->
+    <path d="M 75,95 Q 120,90 160,110" fill="none" stroke="url(#neonGreen)" stroke-width="1.5" />
+    <path d="M 70,105 Q 115,100 150,120" fill="none" stroke="url(#neonGreen)" stroke-width="1.5" />
+    <path d="M 65,115 Q 110,110 140,130" fill="none" stroke="url(#neonGreen)" stroke-width="1.5" />
+    
+    <!-- Neon green slash logo -->
+    <path d="M 120,95 L 180,85 L 160,135 L 140,135 Z" fill="url(#neonGreen)" filter="url(#glow)" opacity="0.8" />
+    
+    <!-- Ultra thin tongue and speed laces -->
+    <path d="M 160,80 Q 175,85 180,100 L 165,105 Q 155,90 150,83 Z" fill="#111" />
+    <line x1="162" y1="85" x2="178" y2="92" stroke="url(#neonGreen)" stroke-width="2" />
+    <line x1="158" y1="95" x2="173" y2="102" stroke="url(#neonGreen)" stroke-width="2" />
+  </g>
+  
+  <text x="30" y="275" font-family="'Courier New', monospace" font-size="10" fill="#666">SYS: KINETIC // VELOCITY-03</text>
+  <text x="320" y="275" font-family="'Courier New', monospace" font-size="10" fill="#76ff03" filter="url(#glow)">LATERAL.V1</text>
+</svg>

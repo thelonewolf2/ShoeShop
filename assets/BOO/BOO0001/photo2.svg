@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Glow -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9100" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0" />
+    </radialGradient>
+    <!-- Amber gradient -->
+    <linearGradient id="neonOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9100" />
+      <stop offset="100%" stop-color="#ff3d00" />
+    </linearGradient>
+    <!-- Body -->
+    <linearGradient id="bodyDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c2825" />
+      <stop offset="50%" stop-color="#1c1a18" />
+      <stop offset="100%" stop-color="#0f0e0d" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <rect width="400" height="300" fill="#0d0d0d" rx="16" />
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" />
+    <line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" />
+    <line x1="0" y1="250" x2="400" y2="250" />
+    <line x1="50" y1="0" x2="50" y2="300" /><line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="300" /><line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="250" y1="0" x2="250" y2="300" /><line x1="300" y1="0" x2="300" y2="300" />
+    <line x1="350" y1="0" x2="350" y2="300" />
+  </g>
+  
+  <rect width="400" height="300" fill="url(#bgGlow)" rx="16" />
+  
+  <!-- Shadows -->
+  <ellipse cx="200" cy="245" rx="100" ry="12" fill="#000" opacity="0.6" filter="blur(5px)" />
+  <ellipse cx="200" cy="245" rx="60" ry="6" fill="#ff9100" opacity="0.12" filter="blur(8px)" />
+
+  <g transform="translate(65, 30) scale(0.95)">
+    <!-- Sole (perspective rear, chunky) -->
+    <path d="M 40,180 Q 110,192 180,188 T 260,165 L 265,155 Q 180,175 110,175 T 35,160 Z" fill="#151312" stroke="#2c2825" stroke-width="1" />
+    <path d="M 35,170 Q 110,185 180,181 T 262,158" fill="none" stroke="url(#neonOrange)" stroke-width="2.5" filter="url(#glow)" />
+    <!-- Tread blocks -->
+    <path d="M 50,178 L 50,188 M 80,181 L 80,191 M 110,182 L 110,192 M 145,181 L 145,191 M 180,178 L 180,188" stroke="#000" stroke-width="3" />
+
+    <!-- Body -->
+    <path d="M 40,170 Q 30,80 60,50 Q 85,45 105,70 Q 125,105 260,150 L 260,155 Q 180,175 40,170 Z" fill="url(#bodyDark)" stroke="#3e3935" stroke-width="1" />
+    
+    <!-- Rear pull tab and collar details (emphasized rear) -->
+    <path d="M 40,170 Q 25,110 35,70 Q 55,65 65,85 Q 50,130 55,170" fill="#181312" />
+    <path d="M 30,70 Q 20,55 32,50 T 42,65" fill="none" stroke="url(#neonOrange)" stroke-width="3" filter="url(#glow)" />
+  </g>
+  
+  <text x="30" y="275" font-family="'Courier New', monospace" font-size="10" fill="#666">SYS: KINETIC // TERRA-04</text>
+  <text x="320" y="275" font-family="'Courier New', monospace" font-size="10" fill="#ff9100" filter="url(#glow)">REAR.V2</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Glow -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d500f9" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0" />
+    </radialGradient>
+    <!-- Purple neon gradient -->
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d500f9" />
+      <stop offset="100%" stop-color="#ff1744" />
+    </linearGradient>
+    <!-- Body -->
+    <linearGradient id="bodyDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d1c3a" />
+      <stop offset="50%" stop-color="#16101c" />
+      <stop offset="100%" stop-color="#0b080f" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <rect width="400" height="300" fill="#0d0d0d" rx="16" />
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="50" x2="400" y2="50" /><line x1="0" y1="100" x2="400" y2="100" />
+    <line x1="0" y1="150" x2="400" y2="150" /><line x1="0" y1="200" x2="400" y2="200" />
+    <line x1="0" y1="250" x2="400" y2="250" />
+    <line x1="50" y1="0" x2="50" y2="300" /><line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="300" /><line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="250" y1="0" x2="250" y2="300" /><line x1="300" y1="0" x2="300" y2="300" />
+    <line x1="350" y1="0" x2="350" y2="300" />
+  </g>
+  
+  <rect width="400" height="300" fill="url(#bgGlow)" rx="16" />
+  
+  <!-- Shadows -->
+  <ellipse cx="200" cy="245" rx="100" ry="12" fill="#000" opacity="0.6" filter="blur(5px)" />
+  <ellipse cx="200" cy="245" rx="60" ry="6" fill="#d500f9" opacity="0.12" filter="blur(8px)" />
+
+  <g transform="translate(65, 30) scale(0.95)">
+    <!-- Sole (perspective rear) -->
+    <path d="M 40,185 Q 110,195 180,190 T 260,165 L 265,155 Q 180,180 110,180 T 35,165 Z" fill="#15121a" stroke="#2a1f33" stroke-width="1" />
+    <path d="M 35,175 Q 110,190 180,185 T 262,160" fill="none" stroke="url(#neonPurple)" stroke-width="2.5" filter="url(#glow)" />
+
+    <!-- Body -->
+    <path d="M 40,175 Q 30,85 70,60 Q 100,55 125,75 Q 150,110 260,160 L 260,165 Q 180,180 40,175 Z" fill="url(#bodyDark)" stroke="#2d1c3a" stroke-width="1" />
+    
+    <!-- Ankle protection / collar details (emphasized rear) -->
+    <path d="M 40,175 Q 25,115 35,80 Q 55,75 65,95 Q 50,135 55,175" fill="#181320" />
+    <!-- Rear tag loop -->
+    <path d="M 30,80 Q 20,65 32,60 T 42,75" fill="none" stroke="url(#neonPurple)" stroke-width="3" filter="url(#glow)" />
+  </g>
+  
+  <text x="30" y="275" font-family="'Courier New', monospace" font-size="10" fill="#666">SYS: KINETIC // NEBULA-02</text>
+  <text x="320" y="275" font-family="'Courier New', monospace" font-size="10" fill="#d500f9" filter="url(#glow)">REAR.V2</text>
+</svg>
